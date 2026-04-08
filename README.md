@@ -132,3 +132,4 @@ codyssey2/
 ![저장소 clone](./docs/screenshots/clone.png)
 
 ### 저장소 pull
+![저장소 pull](./docs/screenshots/pull.png)
