@@ -137,3 +137,7 @@ codyssey2/
 
 ### 저장소 pull
 ![저장소 pull](./docs/screenshots/pull.png)
+
+
+### git log
+![git log](./docs/screenshots/gitlog.png)
