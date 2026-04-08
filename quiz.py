@@ -42,11 +42,4 @@ class Quiz:
             "hint":     self.hint,
         }
 
-    @classmethod
-    def from_dict(cls, data: dict) -> "Quiz":
-        return cls(
-            question=data["question"],
-            choices=data["choices"],
-            answer=data["answer"],
-            hint=data.get("hint", ""),
-        )
+
