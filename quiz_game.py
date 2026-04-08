@@ -282,7 +282,18 @@ class QuizGame:
         self._save_data()
         print("\n  ✅ 퀴즈가 추가되었습니다!")
 
+    # 기능 3: 퀴즈 목록
+    def _list_quizzes(self) -> None:
+        if not self.quizzes:
+            print("\n  등록된 퀴즈가 없습니다.")
+            return
 
+        print(f"\n  📋 등록된 퀴즈 목록 (총 {len(self.quizzes)}개)")
+        print("  " + LINE_THIN)
+        for i, quiz in enumerate(self.quizzes, 1):
+            hint_mark = " 💡" if quiz.hint else ""
+            print(f"  [{i:>2}] {quiz.question}{hint_mark}")
+        print("  " + LINE_THIN)
 
     # 기능 4: 점수 확인
 
